@@ -1,6 +1,6 @@
 // 初期化 
 const baseApi = 'https://ihatov08.github.io',
-      tbody = document.getElementById('tbody')
+      tbody = document.getElementById('tbody'),
       load = document.getElementById('load');
 
 // ロード画面の切り替え
@@ -30,9 +30,9 @@ const showTable = async (option) => {
       const td = tr.insertCell();
       if (key === 'image'){
         const img = document.createElement('img');
-        img.src = `${baseApi}${char[key]}`
-        img.style = "width: 50%;"
-        td.appendChild(img)
+        img.src = `${baseApi}${char[key]}`;
+        img.style = "width: 50%;";
+        td.appendChild(img);
       } else {
         td.textContent = char[key];
       }      
